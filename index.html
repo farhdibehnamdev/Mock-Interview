@@ -6,7 +6,6 @@
     <meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
     <title>Mock Interview</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/custom-dropdown.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,23 +38,11 @@
                   <i class="devicon-javascript-plain colored"></i>
                   <p>JavaScript</p>
                   <!-- <div class="numberOfQuestions"><p>180</p></div> -->
-                  <div class="btn-arrow">
-                    <!-- <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="languages-arrow-down"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg> -->
-                  </div>
-                  <ion-icon name="chevron-down-outline"></ion-icon>
+                  <div class="btn-arrow"></div>
+                  <ion-icon
+                    name="chevron-down-outline"
+                    class="chevron-down"
+                  ></ion-icon>
                 </div>
               </li>
             </ul>
@@ -101,7 +88,190 @@
           </div>
         </div>
       </section>
-      <section class="questions"></section>
+      <section class="filter-questions">
+        <div class="filter-container">
+          <!-- <div class="question-level"></div> -->
+          <div class="code-challenge">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span> </label
+            ><span>code challenges</span>
+          </div>
+          <div class="search-question">
+            <input type="search" placeholder="search questions by title..." />
+            <div class="btn-search"></div>
+            <ion-icon name="search-outline" class="search-outline"></ion-icon>
+          </div>
+          <div class="download-pdf">
+            <ion-icon
+              name="cloud-download-outline"
+              class="cloud-download"
+            ></ion-icon>
+            <p>download as pdf</p>
+          </div>
+        </div>
+      </section>
+      <section class="question-answer">
+        <div class="question entry">
+          <div class="question-container">
+            <div class="number-text">
+              <div class="question-number"><p>1</p></div>
+              <div class="question-text">
+                <p>How does React work?</p>
+              </div>
+            </div>
+            <div class="level-arrow">
+              <div class="question-level"><p>Entry</p></div>
+              <div class="question-arrow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question-answer">
+        <div class="question junior">
+          <div class="question-container">
+            <div class="number-text">
+              <div class="question-number"><p>2</p></div>
+              <div class="question-text">
+                <p>What is a higher order component?</p>
+              </div>
+            </div>
+            <div class="level-arrow">
+              <div class="question-level"><p>Junior</p></div>
+              <div class="question-arrow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question-answer">
+        <div class="question mid">
+          <div class="question-container">
+            <div class="number-text">
+              <div class="question-number"><p>3</p></div>
+              <div class="question-text">
+                <p>What are the advantages of using React?</p>
+              </div>
+            </div>
+            <div class="level-arrow">
+              <div class="question-level"><p>Mid</p></div>
+              <div class="question-arrow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question-answer">
+        <div class="question senior">
+          <div class="question-container">
+            <div class="number-text">
+              <div class="question-number"><p>4</p></div>
+              <div class="question-text">
+                <p>Why would you eject from create-react-app?</p>
+              </div>
+            </div>
+            <div class="level-arrow">
+              <div class="question-level"><p>Senior</p></div>
+              <div class="question-arrow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question-answer">
+        <div class="question expert">
+          <div class="question-container">
+            <div class="number-text">
+              <div class="question-number"><p>5</p></div>
+              <div class="question-text">
+                <p>When would you use StrictMode component in React?</p>
+              </div>
+            </div>
+            <div class="level-arrow">
+              <div class="question-level"><p>Expert</p></div>
+              <div class="question-arrow">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer-container">
+            <div class="answer-header">
+              <div class="answer-title">
+                <span class="answer-bullet"></span>
+                <p>Answer</p>
+              </div>
+              <div class="answer-social-icon">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="answer-mark-as-read"><p>mark as read</p></div>
+            </div>
+            <div class="answer-text">
+              <p>
+                It is easy to know how a component is rendered, you just need to
+                look at the render function. JSX makes it easy to read the code
+                of your components. It is also really easy to see the layout, or
+                how components are plugged/combined with each other. You can
+                render React on the server-side. This enables improves SEO and
+                performance. It is easy to test. You can use React with any
+                framework (Backbone.js, Angular.js) as it is only a view layer.
+                render React on the server-side. This enables improves SEO and
+                performance. It is easy to test. You can use React with any
+                framework (Backbone.js, Angular.js) as it is only a view layer.
+                render React on the server-side. This enables improves SEO and
+                performance. It is easy to test. You can use React with any
+                framework (Backbone.js, Angular.js) as it is only a view layer.
+              </p>
+            </div>
+            <div class="answer-like-comment">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="like-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+                <span class="likes-number">24</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="like-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                  />
+                </svg>
+                <span class="likes-number">38</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
