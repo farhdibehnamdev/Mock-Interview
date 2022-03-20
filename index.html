@@ -24,6 +24,7 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
     <header class="header">
@@ -36,8 +37,13 @@
           <li><a class="main-nav-link" href="#">Contact Us</a></li>
           <li><a class="main-nav-link" href="#">Blog</a></li>
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Prices</a></li>
-          <li><a class="main-nav-link" href="#">Account</a></li>
+          <li><a class="main-nav-link prices" href="#">Prices</a></li>
+          <li>
+            <a class="main-nav-link account" href="#">
+              <i class="ph-user-circle-fill ph-lg"></i>
+              <span class="account-text"> Account </span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -45,15 +51,44 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1></h1>
-            <p class="hero-description"></p>
+            <h1>Get ready for an interview and get hired</h1>
+            <p class="hero-description">
+              Stay in the know with the frequently asked tech interview
+              questions along with the best answers that will help you crack
+              your next tech interview and land your dream career as a software
+              engineer.
+            </p>
+            <div class="hero-info-app">
+              <div class="hero-question">
+                <span>4791 Questions</span>
+              </div>
+              <div class="hero-rating">
+                <span>4.8 Rating</span>
+              </div>
+              <div class="hero-hired">
+                <span>536 Have been hired</span>
+              </div>
+            </div>
+            <div class="hero-download-app">
+              <div class="hero-app-store">
+                <a href="#">App Store</a>
+              </div>
+              <div class="hero-play-store">
+                <a href="#">Play Store</a>
+              </div>
+            </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <picture>
+              <!-- <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" /> -->
+
+              <img
+                src="./images/smart-phone.webp"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
