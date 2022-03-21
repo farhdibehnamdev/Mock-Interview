@@ -81,7 +81,7 @@ body {
 }
 .hero {
   background-color: #fff;
-  padding: 3.8rem 24.5rem;
+  padding: 3.8rem 18.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
@@ -115,13 +115,31 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  font-weight: bold;
 }
+.hero-info-number {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+.hero-info {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.hero-bullet {
+  border-radius: 50%;
+  background-color: #ff8e41;
+  padding: 0.5rem;
+}
+
 .hero-download-app {
   display: flex;
   gap: 2rem;
 }
-a.app-store {
+
+.hero-app a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,23 +151,27 @@ a.app-store {
   padding: 1rem 1.6rem 1rem 1.6rem;
   gap: 1rem;
 }
-.app-store-icon {
+.app-icon {
   align-self: flex-end;
 }
 
-.app-store-text {
+.app-text {
   line-height: 1.5;
   font-family: "Montserrat";
 }
 
-.app-store-text p:nth-child(1) {
+.app-text p:nth-child(1) {
   font-size: 1.4rem;
   padding-bottom: 0.3rem;
 }
 
-.app-store-text p:nth-child(2) {
+.app-text p:nth-child(2) {
   font-weight: 500;
   font-size: 1.8rem;
+}
+
+.play-store a {
+  background-color: #ff8e41;
 }
 
 main section {
