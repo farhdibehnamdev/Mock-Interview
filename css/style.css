@@ -76,6 +76,11 @@ body {
 .prices i {
   transform: translate(-30%, 8%);
 }
+
+/************************
+//    Hero Section      *  
+//**********************/
+
 .section-hero {
   margin-bottom: 5rem;
 }
@@ -192,6 +197,9 @@ main section {
   text-align: center;
   font-size: 1.8rem;
 }
+/****************************
+//    Dropdown Section      * 
+//***************************/
 .container .btn-arrow {
   cursor: pointer;
   background-image: linear-gradient(317deg, #fd485a 91%, #fd6a79 10%);
@@ -607,7 +615,45 @@ input:checked + .slider::before {
   font-weight: 600;
   color: #9fa3ad;
 }
-/* .answer-like-comment ion-icon {
-  font-size: 2rem;
-  align-content: flex-start;
-} */
+
+/**********************************
+//    Last Blog Post Section      * 
+//*********************************/
+
+/************************
+//    Footer Section    * 
+//**********************/
+
+.footer {
+  box-shadow: 0 -3px 10px 0 rgba(220, 232, 250, 0.4);
+  background-color: #fff;
+  padding: 64px 242px 64px 165px;
+  margin-top: 6.4rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+form {
+  position: relative;
+}
+.subscribe-email {
+  padding: 1.2rem 5rem 1.2rem 5rem;
+  border-radius: 10rem;
+  border: solid 1px #ddd;
+  width: 35rem;
+}
+
+.btn-subscribe {
+  position: absolute;
+  top: 50%;
+  right: 17%;
+  transform: translate(50%, -18%);
+  padding: 0.6rem 1.6rem;
+  border-radius: 10rem;
+  background-image: linear-gradient(288deg, #fd485a 89%, #fd6a79 11%);
+  text-decoration: none;
+  color: #fff;
+}
