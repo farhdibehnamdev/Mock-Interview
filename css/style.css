@@ -619,6 +619,120 @@ input:checked + .slider::before {
 /**********************************
 //    Last Blog Post Section      * 
 //*********************************/
+.last-blog-post {
+  width: 111rem;
+}
+.last-blog-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  color: #2a3143;
+}
+
+.last-blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 4rem;
+  color: #2a3143;
+}
+.last-blog-header p {
+  color: #6c6f75;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.see-all-post {
+  display: flex;
+  justify-content: center;
+  color: #6c6f75;
+  cursor: pointer;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.first-blog-post,
+.second-blog-post,
+.third-blog-post {
+  width: 35rem;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 3px 10px 0 rgba(220, 232, 250, 0.4);
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  gap: 2.6rem;
+  position: relative;
+}
+
+.blog-post-image img {
+  width: 32rem;
+  height: 24rem;
+  border-radius: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+
+.blog-post-tag {
+  background-color: #ff8e41;
+  border-radius: 10rem;
+  padding: 0.4rem 1.6rem;
+  color: #fff;
+  align-self: flex-end;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  transform: translate(0%, 50%);
+  cursor: pointer;
+}
+
+.blog-post-title h3 {
+  color: #2a3143;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.blog-post-summary p {
+  line-height: 2;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  color: #6c6f75;
+  font-weight: 600;
+}
+.blog-post-button {
+  align-self: flex-end;
+}
+.read-more {
+  color: #fff;
+  background-image: linear-gradient(298deg, #fd485a 96%, #fd6a79 3%);
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.last-blog-post-footer {
+  border-top: 2px solid #edeff2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  gap: 5rem;
+}
+.img-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-author img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
 
 /************************
 //    Footer Section    * 
