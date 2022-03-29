@@ -21,62 +21,6 @@ body {
   align-items: center; */
 }
 
-/***********************
-//    header Section   * 
-//**********************/
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  height: 7.6rem;
-  border-bottom: solid 2px #ddd;
-  /* padding: 1.4rem 0 0; */
-  padding: 2rem 6.4rem 2rem 6.4rem;
-}
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 2.3rem;
-}
-
-.main-nav-link {
-  text-decoration: none;
-  color: #9fa3ad;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.home {
-  color: #000;
-}
-
-.account {
-  border-radius: 10rem;
-  border: solid 1px #2a3143;
-  padding: 0.8rem 1.5rem 0.8rem 1.6rem;
-  color: #000;
-  display: flex;
-  align-items: center;
-}
-.account i {
-  transform: translate(-10%, 5%);
-}
-
-.prices {
-  display: flex;
-  align-items: center;
-  padding: 0.8rem 2rem 0.8rem 2rem;
-  border-radius: 10rem;
-  background-image: linear-gradient(281deg, #fd485a 95%, #fd6a79 7%);
-  color: #fff;
-}
-
-.prices i {
-  transform: translate(-30%, 8%);
-}
-
 /************************
 //    Hero Section      *  
 //**********************/
@@ -699,7 +643,7 @@ input:checked + .slider::before {
   font-weight: 600;
 }
 .blog-post-button {
-  align-self: flex-end;
+  justify-self: end;
 }
 .read-more {
   color: #fff;
@@ -720,12 +664,14 @@ input:checked + .slider::before {
   padding: 2rem 0.5rem 0 0.5rem;
   font-size: 1.2rem;
   gap: 5rem;
+  color: #9fa3ad;
 }
 .img-author {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  font-weight: 600;
 }
 
 .img-author img {
@@ -733,7 +679,16 @@ input:checked + .slider::before {
   height: 3.2rem;
   border-radius: 50%;
 }
+.blog-post-date {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
 
+.blog-post-date p {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
 /************************
 //    Footer Section    * 
 //**********************/
